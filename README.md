@@ -2,7 +2,7 @@
 
 # Name: ESWANTH KUMAR K
 # Register Number: 212223040046
-SKILL ASSESSMENT-1(HRM)
+
 # Aim
 To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in AWS.  
 
@@ -76,10 +76,10 @@ To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in 
 # Snapshots
 
 **Snapshot 1:** Simple Storage Service (S3)  
-![alt text](output-1.png)
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/25a02c58-7be3-4868-b57a-d29eb075f8a5" />
 
 **Snapshot 2:** EC2 (Elastic Compute Cloud) – Instance  
-![alt text](output-2.png)
+<img width="1920" height="1516" alt="image" src="https://github.com/user-attachments/assets/1330078d-4c7f-455b-9b15-83b5e80fd9b4" />
 
 ---
 
