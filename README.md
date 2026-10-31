@@ -65,8 +65,10 @@ Snap Shots:
 
 Snap Shot 1: Simple Storage Service (S3)
 
+
 <img width="1610" height="970" alt="Screenshot 2026-10-31 100342" src="https://github.com/user-attachments/assets/d97aefc7-44b0-41ed-85e0-361b42163499" />
 <img width="1610" height="973" alt="Screenshot 2026-10-31 100529" src="https://github.com/user-attachments/assets/b2ea41af-7062-4b23-a1eb-73e094899525" />
+
 
 
 Snap Shot 2: EC2 (Elastic Compute Cloud) – Instance
