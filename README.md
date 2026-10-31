@@ -2,86 +2,78 @@
 
 # Name: ESWANTH KUMAR K
 # Register Number: 212223040046
-
-# Aim
-To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in AWS.  
-
+# Aim:
+To create a Simple Storage Service (S3) in AWS and to launch an EC2
+instance in AWS.
 # Procedure
+a) Steps to Create a first S3 Bucket:
 
-## a) Steps to Create a First S3 Bucket
+## Step 1: Sign in to the AWS Management Console
+Go to https://console.aws.amazon.com/s3.
+## Step 2: Open the S3 Service
+In the console, type S3 in the search bar and select S3 to open the service
+dashboard.
+## Step 3: Create Bucket
+Click the Create bucket button.
+## Step 4: Configure Bucket Settings
 
-1. **Sign in to the AWS Management Console**  
-   Go to [AWS S3 Console](https://console.aws.amazon.com/s3).
+• Bucket name: Choose a globally unique name.
+• AWS Region: Select the region where you want to store your data.
 
-2. **Open the S3 Service**  
-   In the console, type **S3** in the search bar and select **S3** to open the service dashboard.
+## Step 5: Object Ownership
+Choose between:
+▪ ACLs disabled (recommended) – Bucket owner has full control.
+▪ ACLs enabled – Control access via access control lists.
 
-3. **Create Bucket**  
-   Click the **Create bucket** button.
+## Step 6: Block Public Access Settings
+By default, all public access is blocked. Leave it as-is unless you need
+public access.
+## Step 7: Bucket Versioning (optional)
+Choose whether to enable versioning for objects in the bucket.
+## Step 8: Encryption (optional)
+Select encryption options (SSE-S3, SSE-KMS, or none).
+## Step 9: Advanced Settings (optional)
+Add tags, configure logging, etc.
+## Step 10: Create the Bucket
+Click Create bucket at the bottom of the page.
 
-4. **Configure Bucket Settings**  
-   - **Bucket name:** Choose a globally unique name.  
-   - **AWS Region:** Select the region where you want to store your data.
+b) i. Steps to launch an EC2 Instance
 
-5. **Object Ownership**  
-   Choose between:  
-   - **ACLs disabled (recommended):** Bucket owner has full control.  
-   - **ACLs enabled:** Control access via access control lists.
+1. Go to the EC2 Dashboard in AWS Console.
+2. Click on “Launch Instance”.
+3. Choose an Amazon Machine Image (AMI) (e.g., Amazon Linux).
+4. Select an instance type (e.g., t2.micro for Free Tier).
 
-6. **Block Public Access Settings**  
-   By default, all public access is blocked. Leave it as-is unless you need public access.
 
-7. **Bucket Versioning (optional)**  
-   Choose whether to enable versioning for objects in the bucket.
+5. Create or choose a key pair for SSH access.
+6. Configure network settings (use default VPC/subnet).
+7. Configure storage (default root volume is fine).
+8. Review the settings and click “Launch Instance”.
+9. Wait for the instance to enter the running state.
 
-8. **Encryption (optional)**  
-   Select encryption options: **SSE-S3**, **SSE-KMS**, or **none**.
+c) Step 3: Connect to Your Instance
 
-9. **Advanced Settings (optional)**  
-   Add tags, configure logging, etc.
+• Linux: Use SSH command with your .pem key.
+• Windows: Use RDP with decrypted admin password.
 
-10. **Create the Bucket**  
-    Click **Create bucket** at the bottom of the page.
+d) Steps to Clean Up (Terminate the Instance)
 
----
+1. Go to EC2 Instances.
+2. Select your instance → Instance State → Terminate.
 
-## b) Steps to Launch an EC2 Instance
+Snap Shots:
 
-1. Go to the **EC2 Dashboard** in AWS Console.  
-2. Click on **Launch Instance**.  
-3. Choose an **Amazon Machine Image (AMI)** (e.g., Amazon Linux).  
-4. Select an **instance type** (e.g., `t2.micro` for Free Tier).  
-5. Create or choose a **key pair** for SSH access.  
-6. Configure **network settings** (use default VPC/subnet).  
-7. Configure **storage** (default root volume is fine).  
-8. Review the settings and click **Launch Instance**.  
-9. Wait for the instance to enter the **running state**.
+Snap Shot 1: Simple Storage Service (S3)
 
----
+<img width="1610" height="970" alt="Screenshot 2026-10-31 100342" src="https://github.com/user-attachments/assets/d97aefc7-44b0-41ed-85e0-361b42163499" />
+<img width="1610" height="973" alt="Screenshot 2026-10-31 100529" src="https://github.com/user-attachments/assets/b2ea41af-7062-4b23-a1eb-73e094899525" />
 
-## c) Connect to Your Instance
 
-- **Linux:** Use SSH command with your `.pem` key.  
-- **Windows:** Use RDP with decrypted admin password.
+Snap Shot 2: EC2 (Elastic Compute Cloud) – Instance
+<img width="1610" height="987" alt="Screenshot 2026-10-31 101459" src="https://github.com/user-attachments/assets/6a2942f2-4542-4054-914f-fc312cf91203" />
+<img width="1610" height="917" alt="Screenshot 2026-10-31 101812" src="https://github.com/user-attachments/assets/835eb8e4-753c-4a6d-ae7c-35c3d90a98a0" />
 
----
 
-## d) Steps to Clean Up (Terminate the Instance)
-
-1. Go to **EC2 Instances**.  
-2. Select your instance → **Instance State** → **Terminate**.
-
----
-
-# Snapshots
-
-**Snapshot 1:** Simple Storage Service (S3)  
-<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/25a02c58-7be3-4868-b57a-d29eb075f8a5" />
-
-**Snapshot 2:** EC2 (Elastic Compute Cloud) – Instance  
-<img width="1920" height="1516" alt="image" src="https://github.com/user-attachments/assets/1330078d-4c7f-455b-9b15-83b5e80fd9b4" />
-
----
-
-# Result
-Thus, a Simple Storage Service (S3) and EC2 (Elastic Compute Cloud) instance has been successfully created and launched in AWS.
+# Result:
+Thus, a Simple Storage Service (S3) and EC2 (Elastic Compute Cloud) - instance
+has been successfully created and launched in AWS
